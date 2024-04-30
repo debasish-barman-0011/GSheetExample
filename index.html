@@ -1,179 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-<style>
-  .formContainer{
-    padding: 20px;
-    margin: 20px;
-  }
-</style>
-    <title>Student Registration</title>
-  </head>
-  <body>
-    <div class="formContainer">
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputName">Name :</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputName"
-              placeholder="Student Name"
-            />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="studentCode">Student Code :</label>
-            <input
-              type="text"
-              class="form-control"
-              id="studentCode"
-              placeholder="Student Code"
-            />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail">Email :</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="phoneNumber">Mobile :</label>
-            <input
-              type="number"
-              class="form-control"
-              id="phoneNumber"
-              placeholder="Mobile"
-            />
-          </div>
-        </div>
-       
-        <div class="form-group">
-          <label for="inputAddress2">Permanent Address :</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment / Landmark , District - Pincode"
-          />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://www.brainwareuniversity.ac.in/studentselfservice/images/logo-small.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+  <title>New Admission-Session 2024 | Brainware University | </title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Complaint Regarding</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Academics -> Lack of understanding among Students & Teachers.</option>
-            <option>Anti Ragging -> abuse / misbehaviour of Staf or ragged.</option>
-            <option>Paymet -> Transaction Failed but money deducted from Account.</option>
-            <option>Services -> lack of proper supply of Water, Electric & Study materials.</option>
-            <option>Need holyday -> hard situation in Summer, Monsoon or Winter.</option>
+<body>
+  <div class="formContainer">
+    <img src="https://i.pinimg.com/1200x/82/0d/3a/820d3a627a5a8daef02a179765ab2f5e.jpg" alt="Early Bird Offer"
+      width="100%" height="auto">
+    <form id="registrationForm" name="submit-to-google-sheet">
+      <h2>Register for Free Councelling</h2>
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="studentName">Name :</label>
+          <input type="text" class="form-control" id="studentName" name="Name" placeholder="Student Name" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="studentCode">Father / Guardian :</label>
+          <input type="text" class="form-control" id="studentCode" name="Guardian" placeholder="Father / Guardian"
+            required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email :</label>
+          <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="name@example.com" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="phoneNumber">Mobile :</label>
+          <input type="number" class="form-control" id="phoneNumber" name="Mobile" placeholder="Mobile" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputAddress2">Permanent Address :</label>
+        <input type="text" class="form-control" id="inputAddress2" name="Address"
+          placeholder="Apartment / Landmark , District - Pincode" required />
+      </div>
+
+      <div class="form-group">
+        <label for="department">Select Course / Department</label>
+        <select name="Department" class="form-control" id="department" required>
+          <option selected>Choose Dept.</option>
+          <optgroup label="Under Graduate Courses">
+
+            <option value="Agriculture"> BSc.(H) Agriculture </option>
+            <option value="BBA"> BBA (H)</option>
+            <option value="Biotechnology"> BSc. Biotechnology </option>
+            <option value="BBA DM"> BBA Digital Marketing</option>
+            <option value="LAW"> Bachelor of Business Law </option>
+            <option value="BCA"> BCA </option>
+            <option value="CCT"> Critical Care Technology</option>
+            <option value="ECE"> B.Tech Electronics & Comm </option>
+            <option value="English"> English (H) </option>
+            <option value="BHM"> BBA Hospital Management </option>
+            <option value="CST"> Cyber Science Technology </option>
+            <option value="BMJ"> BSc. Media Science</option>
+            <option value="Micro Biology"> BSc. Micro Biology </option>
+            <option value="BPA"> BSc. PA (Allied Health Science)</option>
+            <option value="Physio Therapy"> BSc. PT (Allied Health Science)</option>
+            <option value="OPTO"> BSc. OPTO (Allied Health Science)</option>
+            <option value="OTT"> BSc. OTT (Allied Health Science)</option>
+            <option value="MRIT"> BSc. MRIT (Allied Health Science)</option>
+            <option value="CSE BTA"> B.Tech. CSE AI ML</option>
+            <option value="CSE BTD"> B.Tech Data Science </option>
+            <option value="LLB"> Bachelor of Laws (LLB)</option>
+
+          </optgroup>
+
+
+          <optgroup label="Post Graduate Courses">
+
+            <option value="MA English">M.A. English</option>
+            <option value="MBA"> Master of Buisness Administration(MBA)</option>
+            <option value="MCA"> Master of Computer Applications(MCA)</option>
+            <option value="MHM"> Master of Hospital Management(MHM)</option>
+            <option value="MMJ"> Master of Media Science & Journalism</option>
+            <option value="Mathematics"> MSc. in Mathematics (MSM)</option>
+            <option value="CSE"> M. Tech (CSE) </option>
+            <option value="LLM">LLM</option>
+          </optgroup>
+
+          <optgroup label="Diploma Courses">
+
+            <option value="DCS"> Diploma in CS</option>
+            <option value="DCE"> Diploma in Civil</option>
+            <option value="DEC"> Diploma in EC</option>
+            <option value="DME"> Diploma in Mechanical</option>
+
+          </optgroup>
+          <optgroup label="Need Councelling ">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Management">Management</option>
+            <option value="Law">Law</option>
+            <option value="Nurshing">Nurshing</option>
+            <option value="Councelling">Not Decided Yet</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Areas of Interest :</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2" name="Interest">
+          <option value="AI">Artificial Inteligence</option>
+          <option value="Programming">Coding/Programming</option>
+          <option value="CS">Computer Science</option>
+          <option value="Management">Science / Physics</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="Medicine">Medicine / Treatment</option>
+          <option value="Remote Sensing">Remote Sensing</option>
+          <option value="WebDev">Web Development</option>
+          <option value="Law">Law & Order</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Career aspiration ?</label>
+        <textarea name="AIM" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" name="City" id="inputCity" />
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" name="State" class="form-control" required>
+
+            <option selected>Select State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">What you love most ?</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>BRAINWARE UNIVERSITY </option>
-            <option>Central Library</option>
-            <option value="">Depatment of CSS</option>
-            <option value="">Department of Mathematics</option>
-            <option>Canteen PET PUJO</option>
-            <option>Food Cort PET PUJO</option>
-            <option>Play Ground</option>
-            <option value="">Boys Hostel</option>
-            <option value="">Girls Hostel</option>
-          </select>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Pincode</label>
+          <input type="text" class="form-control" name="Pincode" id="inputZip" required />
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Describe your Complaint</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required />
+          <label class="form-check-label" for="gridCheck">
+            I'll not misuse the information provided by the Councelling team at Brainware University and above mentioned
+            are true and best of my knowledge.
+          </label>
         </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" />
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              
-          <option selected>Select State</option>
-          <option value="Andhra Pradesh">Andhra Pradesh</option>
-          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-          <option value="Assam">Assam</option>
-          <option value="Bihar">Bihar</option>
-          <option value="Chhattisgarh">Chhattisgarh</option>
-          <option value="Goa">Goa</option>
-          <option value="Gujarat">Gujarat</option>
-          <option value="Haryana">Haryana</option>
-          <option value="Himachal Pradesh">Himachal Pradesh</option>
-          <option value="Jharkhand">Jharkhand</option>
-          <option value="Karnataka">Karnataka</option>
-          <option value="Kerala">Kerala</option>
-          <option value="Madhya Pradesh">Madhya Pradesh</option>
-          <option value="Maharashtra">Maharashtra</option>
-          <option value="Manipur">Manipur</option>
-          <option value="Meghalaya">Meghalaya</option>
-          <option value="Mizoram">Mizoram</option>
-          <option value="Nagaland">Nagaland</option>
-          <option value="Odisha">Odisha</option>
-          <option value="Punjab">Punjab</option>
-          <option value="Rajasthan">Rajasthan</option>
-          <option value="Sikkim">Sikkim</option>
-          <option value="Tamil Nadu">Tamil Nadu</option>
-          <option value="Telangana">Telangana</option>
-          <option value="Tripura">Tripura</option>
-          <option value="Uttar Pradesh">Uttar Pradesh</option>
-          <option value="Uttarakhand">Uttarakhand</option>
-          <option value="West Bengal">West Bengal</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Pincode</label>
-            <input type="text" class="form-control" id="inputZip" />
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              All the above mentioned are true and best of my knowledge.
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Regiaster Complaint </button>
-      </form>
+      </div>
+      <button type="submit" class="btn btn-success">Register for Councelling</button>
+      <button type="reset" class="btn btn-danger">Reset </button>
+    </form>
+    <!-- Confirmation message box -->
+    <div id="confirmationMessage" class="confirmation-box" style="display: none;">
+      <h2>Registration Successful!</h2>
+      <img src="https://i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif" alt="Thank You">
+      <p>Welcome Dear <span id="confirmationName"></span> your slot for Councelling registered with Registration Number
+        <span id="confirmationID"></span> Please Note or Take a Screenshoot.
+      <p>You must visit the Department of <span id="confirmationDepartment"></span> </p> for Councelling & Document
+      verification on <span id="verificationDate"></span> 10 AM - 06 PM at BRAINWARE UNIVERSITY.</p> <a
+        href="https://dbport.netlify.app/" target="_blank"><i class="fa-solid fa-user"></i> Who
+        am I ?</a>
     </div>
-    <!-- End of Form Container -->
+  </div>
+  <!-- End of Form Container -->
+  <script src="confirmation.js"></script>
+  <script src="formData.js"></script>
+  <!-- Bootstrap CDN JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
 
-    <!-- Bootstrap CDN JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
